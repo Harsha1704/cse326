@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:Blue;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    max-width: 1000px;
+}
+
+.references-section {
+    padding: 2rem 0;
+}
+
+.references-section h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color:white;
+    margin-bottom: 1rem;
+}
+
+.intro-text {
+    text-align: center;
+    color: white;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.references-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.reference-item {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reference-item h3 {
+    color: #333;
+    font-size: 1.4rem;
+}
+
+.reference-item p {
+    color: #555;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+.reference-item a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.reference-item a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    .references-section h1 {
+        font-size: 2rem;
+    }
+
+    .intro-text {
+        font-size: 1rem;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <section class="references-section">
+        <div class="container">
+            <h1>References</h1>
+            <p class="intro-text">Html Project</p>
+            
+            <div class="references-content">
+                <div class="reference-item">
+                    <h3>W3 schools</h3>
+                    <p>Some of the tags and Attribute. <a href="https://www.w3schools.com/html/html_editors.asp" target="_blank">Visit Site</a></p>
+                </div>
+                <div class="reference-item">
+                    <h3>Chart Gpt</h3>
+                    <p>Some of the Javascript. <a href="https://chatgpt.com/" target="_blank">Visit Site</a></p>
+                </div>
+                <div class="reference-item">
+                    <h3>India map</h3>
+                    <p>From google i have a taken Svg of india map. <a href="https://mapsvg.com/maps/india" target="_blank">Visit Site</a></p>
+                </div>
+                <div class="reference-item">
+                <h3>Wikimedia</h3>
+                <p>Details of historical places.<a href="" target="_blank">Visit Site</a></p>
+                </div>
+                <div class="reference-item">
+                    <h3>Google</h3>
+                    <p>Images for historical places.<a href=""target="_blank">View  Site</a></p>
+                </div>
+        </div>
+    </section>
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            if (this.getAttribute("href").startsWith("#")) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute("href")).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+});
+
+    </script>
+</body>
+</html>

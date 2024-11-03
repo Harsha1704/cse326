@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style3.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">portfolio</a>
+
+        <nav class="navbar">
+            <a href="#"  style="--i:1;" class="active">About</a>
+            <a href="#"  style="--i:2;">about</a>
+            <a href="#"  style="--i:3;">skills</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <h3>Hello, It's me</h3>
+            <h1>Jilla Lakshmi Narayana Sri Harsha</h1>
+            <h3>And I'm a <span class="multiple-text"></span> </h3>
+            <p>I am studying in LPU. I have taken CSE(AI+ML) course. </p>
+            <div class="social-media">
+                <a href="#" style="--i:7"><i class='bx bxl-facebook'></i></i></a>
+                <a href="#" style="--i:8"><i class='bx bxl-twitter' ></i></a>
+                <a href="#" style="--i:9"><i class='bx bxl-instagram-alt' ></i></a>
+                <a href="#" style="--i:10"><i class='bx bxl-linkedin-square' ></i></a>
+            </div>
+            <a href="#" class="btn">Download cv</a>
+        </div>
+        <div class="home-img">
+            <img src="IMG_20220602_174520.jpg" alt="" width="200px" height="200px">
+        </div>
+    </section>
+    <script>
+        var typed = new Typed(".multiple-text", {
+            strings: ["Software Developer", "Web Developer"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            backDelay: 1000,
+            loop: true
+        });
+    </script>
+</body>
+</html>

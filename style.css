@@ -1,0 +1,162 @@
+
+body{
+  background: rgb(255,249,187);
+  background: linear-gradient(90deg, rgba(255,249,187,1) 16%, rgba(255,249,187,1) 33%, rgba(113,159,128,1) 48%, rgba(38,111,97,1) 56%, rgba(147,25,151,1) 71%, rgba(15,173,194,1) 83%, rgba(0,212,255,1) 100%);
+ }
+ .land{
+fill: #ccc;
+stroke: white;
+stroke-width: 0.5;
+cursor: pointer;
+ }
+ .land:hover{
+  fill: orange;
+ }
+ #b1{
+    background-color: white;
+    text-decoration: none;
+    display: flex;
+    position: relative;
+    gap: 20px;
+ }
+ .search-container{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+ }
+ input[type="text"]{
+  font-size: 18px;
+  padding: 10px;
+  width: 300px;
+ }
+a{
+    text-decoration: none;
+    margin:0px;
+    font-size: 40px;
+    padding: 0px;
+    border-style: solid;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #d5eb0c;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+#map{
+  background-color: transparent;
+  
+}
+svg path{
+  cursor: pointer;
+}
+svg path:hover{
+  fill: red;
+}
+.state-info {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px; /* Set a fixed width for the state info box */
+  height: 700px; /* Set a fixed height for the state info box */
+  background-color: white;
+  border: 2px solid black;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  display: none;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.state-content-scroll {
+  height: calc(100% - 100px); /* Adjust height to leave space for buttons */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 20px;
+}
+
+#contentBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contentBox img {
+  width: 100%; /* Make the image take the full width of the content box */
+  height: 50%; /* Set a fixed height for the images */
+  object-fit: cover; /* Maintain aspect ratio while covering the area */
+  border-radius: 10px; /* Rounded corners for images */
+  margin-bottom: 30px; /* Space between images */
+  transition: transform var(--transition-speed);
+
+}
+#contentBox img:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+}
+#contentBox p {
+  margin-top: 10px; /* Space above content text */
+  font-size: 18px; /* Font size for content text */
+  font-weight: bold; /* Bold text */
+  text-align: center; /* Center align text */
+}
+.image-container {
+  margin-bottom: 15px; /* Space between image containers */
+  text-align: center; /* Center align text */
+}
+
+
+.text-box {
+  background-color: #f0f0f0; /* Light grey background for text box */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px; /* Padding inside the box */
+  margin-top: 5px; /* Space above the text box */
+  font-size: 14px; /* Font size */
+}
+
+
+.image-container h2 {
+  font-family: 'Arial, sans-serif'; /* Change to your desired font */
+  font-size: 24px; /* Change the font size as needed */
+  color: #333; /* Change the text color as needed */
+  text-align: left; /* Center align the text */
+  margin: 10px 0; /* Add some margin for spacing */
+  text-decoration: underline;
+}
+
+.suggestions {
+  border: 1px solid #ccc;
+  max-height: 150px;
+  overflow-y: auto;
+  position: absolute;
+  z-index: 1000;
+  background: white;
+  font-size: 18px;
+  width: 300px;
+}
+.suggestion-item {
+  padding: 8px;
+  cursor: pointer;
+}
+.suggestion-item:hover {
+  background-color: #f0f0f0;
+}
+
