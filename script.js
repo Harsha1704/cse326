@@ -3,11 +3,11 @@ const loginLink = document.querySelector('.login-link');
 const registerLink = document.querySelector('.register-link');
 const btnPopup = document.querySelector('.btnLogin-popup');
 const iconClose = document.querySelector('.icon-close');
-const loginForm = document.querySelector('.login form'); // get the login form
-const registerForm = document.querySelector('.register form'); // get the register form
-const loginButton = document.querySelector('.btn'); // Assuming this is the class for the login button
-const emailInput = document.querySelector('input[name="email"]'); // Get the email input by name
-const passwordInput = document.querySelector('input[name="pass"]'); // Get the password input by name
+const loginForm = document.querySelector('.login form'); 
+const registerForm = document.querySelector('.register form'); 
+const loginButton = document.querySelector('.btn'); 
+const emailInput = document.querySelector('input[name="email"]'); 
+const passwordInput = document.querySelector('input[name="pass"]'); 
 
 if (wrapper && loginLink && registerLink && btnPopup && iconClose && loginForm && registerForm) {
     registerLink.addEventListener('click', () => { wrapper.classList.add('active'); });
