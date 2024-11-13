@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest Resources</title>
+    <link rel="icon" type="image/x-icon" href="images/lpu-sae-india-collegiate-club-logo-29B436A816-seeklogo.com.png">
+    <link rel="stylesheet" type="text/css" href="fm.css" />
+   
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="nav-wrapper">
+         <div class="grad-bar"></div>
+         <nav class="navbar">
+           <img src="images/lpu_logo.png" alt="Company Logo">
+           <div class="menu-toggle" id="mobile-menu">
+             <span class="bar"></span>
+             <span class="bar"></span>
+             <span class="bar"></span>
+           </div>
+           <ul class="nav no-search">
+             <li class="nav-item"><a href="index.html">Home</a></li>
+             <li class="nav-item"><a href="deforestation.html">Causes</a></li>
+             <li class="nav-item"><a href="Plants.html">Plants</a></li>
+             <li class="nav-item"><a href="Login.html">Login</a></li>
+            
+             <li class="nav-item"><a href="contacts.html">Contact Us</a></li>
+             
+             <i class="fas fa-search" id="search-icon"></i>
+             <input class="search-input" type="text" placeholder="Search..">
+           </ul>
+         </nav>
+         </div>
+<!-- contact div section-->
+<section class="section_con">
+    
+  <div class="section-header">
+    <div class="container_contact">
+    <h2>Contact Us</h2>
+    <p>A university with the infrastructure of global standards, internationally benchmarked curricula, rich diversity of students, innovative pedagogy for participative and experiential learning with focus on research, innovation and entrepreneurship.</p>
+    </div>
+  </div>
+  
+  <div class="container_contact">
+    <div class="row">
+    
+    <div class="contact-info">
+      <div class="contact-info-item">
+      <div class="contact-info-icon">
+        <i class="fas fa-home"></i>
+      </div>
+      
+      <div class="contact-info-content">
+        <h4>Address</h4>
+        <p>Lovely Professional University,<br/> Jalandhar - Delhi G.T. Road,<br/>  Phagwara, Punjab (India)  <br/>144411</p>
+      </div> 
+    
+      </div>
+      
+      <div class="contact-info-item">
+      <div class="contact-info-icon">
+        <i class="fas fa-phone"></i>
+      </div>
+      
+      <div class="contact-info-content">
+        <h4>Phone</h4>
+        <p>+91-1824-517000<br/>
+
+          +91-1824-404404<br/>
+          
+          WhatsApp Chat: +91 98525 69000</p>
+      </div>
+      </div>
+      
+      <div class="contact-info-item">
+      <div class="contact-info-icon">
+        <i class="fas fa-envelope"></i>
+      </div>
+      
+      <div class="contact-info-content">
+        <h4>Email</h4>
+       <p>General: info@lpu.co.in<br/>
+
+        Admissions: admissions@lpu.co.in<br/>
+        
+        International Admissions: int.admissions@lpu.co.in</p>
+      </div>
+      </div>
+    </div>
+    
+    <div class="contact-form">
+      <form action="" id="contact-form">
+      <h2>Send Message</h2>
+      <div class="input-box">
+        <input type="text" required="true" name="">
+        <span>Full Name</span>
+      </div>
+      
+      <div class="input-box">
+        <input type="email" required="true" name="">
+        <span>Email</span>
+      </div>
+      
+      <div class="input-box">
+        <textarea required="true" name=""></textarea>
+        <span>Type your Message...</span>
+      </div>
+      
+      <div class="input-box">
+        <input type="submit" value="Send" name="">
+      </div>
+      </form>
+    </div>
+    
+    </div>
+  </div>
+  </section>         
+
+       <footer class="footer">
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon1">
+          <li class="social-icon__item"> <a href="https://facebook.com" class="social-icon"><i class="fab fa-facebook-f"></i></a></li>
+          <li class="social-icon__item"><a href="https://twitter.com" class="social-icon"><i class="fab fa-twitter"></i></a></li>
+          <li class="social-icon__item"> <a href="https://instagram.com" class="social-icon"><i class="fab fa-instagram"></i></a></li>
+          <li class="social-icon__item"> <a href="https://linkedin.com" class="social-icon"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+        <ul class="menu">
+          <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="deforestation.html">Causes</a></li>
+          <li class="menu__item"><a class="menu__link" href="Plants.html">Plants</a></li>
+          <li class="menu__item"><a class="menu__link" href="Login.html">Login</a></li>
+          <li class="menu__item"><a class="menu__link" href="contacts.html">Contact Us</a></li>
+    
+        </ul>
+        <p>&copy;2024 Lovely Professional Univercity  | All Rights Reserved</p>
+    </footer>
+    </div>
+    <script>
+      $("#search-icon").click(function() {
+          $(".nav").toggleClass("search");
+          $(".nav").toggleClass("no-search");
+          $(".search-input").toggleClass("search-active");
+        });
+        
+        $('.menu-toggle').click(function(){
+           $(".nav").toggleClass("mobile-nav");
+           $(this).toggleClass("is-active");
+        });
+      </script>
+</body>
+</html>
