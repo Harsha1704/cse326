@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+
+body {
+    font-family: 'Verdana', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9fafb;
+    color: #333;
+    line-height: 1.5;
+}
+
+
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin: 0.5rem 0;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.contact-card {
+    background: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+.contact-card h2 {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+    color: #007BFF;
+}
+
+.contact-card p {
+    margin: 1rem 0;
+    color: #777;
+}
+
+.contact-card a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+
+form {
+    margin-top: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.extra-info {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.extra-info h3 {
+    font-size: 1.5rem;
+    color: #007BFF;
+}
+
+.social-links a {
+    margin: 0 0.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: #555;
+}
+
+.social-links a:hover {
+    color: #007BFF;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-top: 1px solid #e0e0e0;
+    font-size: 0.9rem;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Me</h1>
+    </header>
+    <main>
+        <section class="contact-container">
+            <div class="contact-card">
+                <h2>Get in Touch</h2>
+                <p>Fill out the form below or email me directly at <a href="mailto:abc@gmail.com">abc@gmail.com</a>.</p>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Write your message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+        <section class="extra-info">
+            <h3>Follow Me</h3>
+            <p>Stay connected via my social media:</p>
+            <div class="social-links">
+                <a href="https://github.com" target="_blank">GitHub</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="" target="_blank">Facebook</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Harsha.Built with creativity. </p>
+    </footer>
+    <script>
+
+    </script>
+</body>
+</html>
