@@ -382,7 +382,6 @@ svg {
             airplaneElement.style.left = `${currentX}px`;
             airplaneElement.style.top = `${currentY}px`;
 
-            // If close to the destination, stop the animation
             if (Math.abs(toX - currentX) < 1 && Math.abs(toY - currentY) < 1) {
                 clearInterval(interval);
                 airplaneElement.style.display = 'none';

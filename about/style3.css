@@ -7,6 +7,7 @@
 }
 body{
     background: url(bg.jpg)  no-repeat;
+    background-size: cover;
 
     color: #fff;
 }
@@ -97,11 +98,12 @@ body{
 }
 .home-img img{
     max-width:fit-content;
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     opacity: 0;
     animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
     animation-delay: .2s .3s;
+    border-radius: 50%;
 }
 .social-media a{
     display: inline-flex;
